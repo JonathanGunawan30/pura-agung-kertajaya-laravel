@@ -18,7 +18,9 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="{{ $site['site_name'] ?? 'Pura Agung Kertajaya' }}">
     <meta property="og:description" content="Pura Agung Kertajaya adalah tempat suci umat Hindu di wilayah Tangerang.">
-    <meta property="og:image" content="{{ asset('pura-agung-kertajaya.jpg') }}">
+    <meta property="og:image" content="{{ asset($site['logo'] ?? 'pura-agung-kertajaya.jpg') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('pura-agung-kertajaya.jpg') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
